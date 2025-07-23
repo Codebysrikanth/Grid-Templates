@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    color: rgb(252, 1, 1);
+    border-radius: 20px;
+    font-size: 2em;
+   font-family: "Nosifer", sans-serif;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    grid-template-areas:
+    'a b b c'
+    'd d e f'
+    'g g g h'
+    'i i j j'
+    'k l l m'
+    'n n n n';
+
+}
+
+.child-1, .child-2, .child-3, .child-4, .child-5, .child-6, .child-7, .child-8, .child-9, .child-10, .child-11, .child-12, .child-13, .child-14{
+    border: 2px solid white;
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+    border-radius: 20px;
+
+}
+
+.child{
+    border-radius: 20px;
+}
+
+.child-1{
+    grid-area: a;
+}
+
+.child-2{
+    grid-area: b;
+}
+
+.child-3{
+    grid-area: c;
+}
+
+.child-4{
+    grid-area: d;
+}
+
+.child-5{
+    grid-area: e;
+}
+
+.child-6{
+    grid-area: f;
+}
+
+.child-7{
+    grid-area: g;
+}
+
+.child-8{
+    grid-area: h;
+}
+
+.child-9{
+    grid-area: i;
+}
+
+.child-10{
+    grid-area: j;
+}
+
+.child-11{
+    grid-area: k;
+}
+
+.child-12{
+    grid-area: l;
+}
+
+.child-13{
+    grid-area: m;
+}
+
+.child-14{
+    grid-area: n;
+}
+
+@media screen and (max-width: 400px) {
+
+    .heading{
+        font-size: 1em;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .main-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f'
+        'g'
+        'h'
+        'i'
+        'j'
+        'k'
+        'l'
+        'm'
+        'n';
+    }
+
+    img{
+        padding: 10px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+
+        .heading{
+        font-size: 1.5em;
+        text-align: center;
+        align-items: center;
+}
+
+    .main-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'a b'
+        'c d'
+        'e f'
+        'g h'
+        'i j'
+        'k l'
+        'm n';
+        
+    }
+}
+
+@media screen and (min-width: 800px){
+
+.heading{
+        font-size: 2em;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+}
+
+
+    .main-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+    'a b b c'
+    'd d e f'
+    'g g g h'
+    'i i j j'
+    'k l l m'
+    'n n n n';
+        
+    }   
+}
